@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-dataset_path = '/mnt/c/Users/jbtff/OneDrive/Documents/dataset'
-train_dir = os.path.join(dataset_path, 'train')
+dataset_path = '/mnt/c/Users/jbtff/OneDrive/Documents/dataset' # replace with path to soil image dataset 
+train_dir = os.path.join(dataset_path, 'train') 
 test_dir = os.path.join(dataset_path, 'test')
 
 train_datagen = ImageDataGenerator(rescale=1./255)
@@ -86,5 +86,5 @@ def predict_image(image_path):
     class_labels = list(train_generator.class_indices.keys())
     print(f'The predicted soil type is: {class_labels[predicted_class[0]]}')
 
-image_path = '/mnt/c/Users/jbtff/OneDrive/Documents/test_image.jpg'
+image_path = '/mnt/c/Users/jbtff/OneDrive/Documents/test_image.jpg' # replace with path of test soil image 
 predict_image(image_path)
