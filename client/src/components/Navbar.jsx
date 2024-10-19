@@ -27,7 +27,7 @@ function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <NavLink to="/" className="capitalize text-black font-bold flex items-center">
+        <NavLink to="/" className={({ isActive }) => `capitalize ${isActive ? "text-deep-orange-900" : "text-black"} font-bold flex items-center`}>
           Home
         </NavLink>
       </Typography>
@@ -37,7 +37,7 @@ function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <NavLink to="/get" className="capitalize text-black font-bold flex items-center">
+        <NavLink to="/get" className={({ isActive }) => `capitalize ${isActive ? "text-deep-orange-900" : "text-black"} font-bold flex items-center`}>
           get your crops
         </NavLink>
       </Typography>
@@ -47,7 +47,7 @@ function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <NavLink to="/products" className="capitalize text-black font-bold flex items-center">
+        <NavLink to="/products" className={({ isActive }) => `capitalize ${isActive ? "text-deep-orange-900" : "text-black"} font-bold flex items-center`}>
           our products
         </NavLink>
       </Typography>
@@ -57,7 +57,7 @@ function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <NavLink to="/contact" className="capitalize text-black font-bold flex items-center">
+        <NavLink to="/contact" className={({ isActive }) => `capitalize ${isActive ? "text-deep-orange-900" : "text-black"} font-bold flex items-center`}>
           contact
         </NavLink>
       </Typography>
@@ -73,7 +73,7 @@ function StickyNavbar() {
             className="mr-4 cursor-pointer py-1.5 text-2xl font-bold text-black"
           >
             <Link to="/">
-              <span className="text-deep-orange-900">i</span>Farm
+              <span className="text-deep-orange-900">A</span>griSmart
             </Link>
           </Typography>
           <div className="flex items-center gap-4">

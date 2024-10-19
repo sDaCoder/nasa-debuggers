@@ -1,80 +1,14 @@
 import React from 'react'
-import { Button, Carousel, Typography } from "@material-tailwind/react";
+import Car from './Car'
 
 const Home = () => {
   return (
-    <Carousel
-        className="absolute top-0 w-screen h-[500px] z-[-1]"
-        navigation={({ setActiveIndex, activeIndex, length }) => (
-          <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-            {new Array(length).fill("").map((_, i) => (
-              <span
-                key={i}
-                className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                  activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-                }`}
-                onClick={() => setActiveIndex(i)}
-              />
-            ))}
-          </div>
-        )}
-      >
-        <div className="relative h-full w-full">
-          <img
-            src="/car2.jpg"
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/30 backdrop:blur-md">
-            <div className="w-3/4 text-center md:w-2/4">
-              <Typography
-                variant="h1"
-                color="white"
-                className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-              >
-                Farmer's Own Friend
-              </Typography>
-            </div>
-          </div>
-        </div>
-        
-        <div className="relative h-full w-full">
-            <img
-            src="/car6.jpg"
-            alt="image 1"
-            className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/30 backdrop:blur-md">
-                <div className="w-3/4 text-center md:w-2/4">
-                    <Typography
-                        variant="h1"
-                        color="white"
-                        className="mb-4 text-3xl md:text-4xl lg:text-5xl"
-                    >
-                        Quality Crop Prediction
-                    </Typography>
-
-                    <div className="flex justify-center gap-2">
-                        <Button size="lg" color="white">Explore</Button>
-                        <Button size="lg" className="text-white">
-                            Gallery
-                        </Button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <img
-          src="/car4.jpg"
-          alt="image 2"
-          className="h-full w-full object-cover"
-        />
-        <img
-          src="/car5.jpg"
-          alt="image 3"
-          className="h-full w-full object-cover"
-        />
-      </Carousel>
-
+    <>
+     <Car /> 
+     <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias id perferendis libero impedit voluptate officia unde, cumque vero doloremque, excepturi mollitia, voluptas possimus eos quaerat ratione eius odio harum cupiditate porro nisi. Unde repudiandae nisi porro quia consectetur repellendus sequi assumenda veniam quisquam dicta ea culpa necessitatibus itaque, cum dolor explicabo sint ullam officiis, accusantium eligendi veritatis laborum. Deserunt perspiciatis doloribus recusandae provident? Dolorem possimus magnam aliquid dicta optio dolor! Dicta quo ea vel aperiam nam qui repudiandae sequi maxime! Sapiente facere iusto officia ad adipisci neque excepturi dolorem incidunt repellat tempora tenetur quos porro, deleniti, molestiae, veritatis laudantium! Reiciendis corporis perferendis minus molestias illum esse harum cupiditate, aut commodi architecto fuga iure iusto debitis, sit fugit! At quidem perferendis labore expedita commodi eligendi voluptatum magnam excepturi nesciunt, quaerat molestias doloribus consequuntur aliquam voluptate, alias a, aperiam odio error vitae veniam natus earum amet. Repellat numquam facilis, voluptas laborum commodi magnam dolor atque excepturi nisi itaque dignissimos libero exercitationem quidem quibusdam minus dicta ducimus tenetur reiciendis enim! Placeat praesentium beatae illo voluptas neque vero, exercitationem nesciunt quaerat quidem. In fuga expedita accusamus odit deleniti repudiandae perferendis blanditiis. Vero quasi minima assumenda laborum, ipsum atque quod ducimus porro maxime harum doloremque sequi ex, unde delectus cum eum earum dolorem eos nesciunt enim voluptas! Voluptas ullam quaerat at odio consequatur architecto blanditiis quos ad? Nesciunt, ea aliquid optio exercitationem voluptatem eligendi quos harum. Consectetur itaque hic ea quaerat, nam quidem! Maiores iusto consectetur hic aliquam vel quidem eius quos omnis quis laudantium dolores ipsum illum aut, exercitationem ex adipisci molestias commodi alias delectus quibusdam? Eligendi, eos facere cupiditate ut fuga dolorum nemo! Aperiam fugiat illo veniam culpa iste. Iste quaerat nulla fugiat dolorum molestias nisi voluptatibus blanditiis tempore unde rem reprehenderit consectetur dolores ratione, sapiente mollitia totam doloribus vitae, commodi id quibusdam eos impedit nesciunt eum molestiae. Impedit, sapiente consequuntur nostrum, delectus aut dolorem beatae, quis vitae incidunt rerum eos fugit totam voluptates aspernatur voluptatibus commodi laborum placeat modi? Ea nostrum dolores voluptates impedit, sequi sapiente error quaerat aut, voluptate laborum eum nemo excepturi earum necessitatibus illum eius voluptatum laboriosam itaque reiciendis! Possimus maxime perspiciatis dolorum quisquam molestiae aperiam! Consectetur excepturi necessitatibus eum rerum soluta fuga labore adipisci, dolorum, alias odit quidem impedit ad officiis provident corrupti iure aliquid ipsum doloremque architecto quasi quaerat. Deserunt harum perferendis ea maiores, atque magni corporis, soluta vel molestias modi deleniti, laudantium itaque. Corporis eum odit corrupti eius accusantium voluptatum! Esse eveniet voluptas vero inventore alias tempora quis, magni consequuntur ratione officia a pariatur sed saepe explicabo id voluptate! Sed, cum quod itaque distinctio earum eaque consequatur dolorem! Labore mollitia, ad recusandae optio esse vero sapiente sed doloribus perspiciatis. Minima ut ipsam neque hic possimus harum tempore maxime nihil doloremque id. Sapiente sunt vero animi in natus officia modi nihil cumque aliquid? Laudantium quas illo ut amet, perspiciatis possimus earum! Velit fuga provident iure optio aspernatur facere vitae dolorum alias temporibus minus cum porro, aliquam, enim delectus eaque nam, voluptas quis tenetur deserunt corporis aliquid. Enim recusandae unde temporibus reprehenderit, dolorum accusamus quod, autem ut sed omnis veniam dolor deserunt porro, adipisci facere illum facilis illo itaque quisquam. Incidunt ipsam, modi, vero nostrum harum, natus architecto ipsum amet cumque eius nesciunt tempora. Voluptas atque sunt eveniet harum nostrum adipisci. Deserunt iste vero illo temporibus, ducimus ipsa!
+     </p>
+    </>
   )
 }
 
